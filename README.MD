@@ -1,4 +1,4 @@
-# Jogo da Forca em CSS, HTML e JavaScript
+# Jogo da Forca em HTML, CSS e JavaScript
 
 Bem-vindo ao Jogo da Forca, uma implementação simples usando tecnologias web básicas: CSS, HTML e JavaScript. Este projeto foi desenvolvido como uma atividade para praticar conceitos fundamentais de programação front-end.
 
