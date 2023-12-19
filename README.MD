@@ -4,7 +4,7 @@ Bem-vindo ao Jogo da Forca, uma implementação simples usando tecnologias web b
 
 ## Como Jogar
 
-1. Abra o arquivo `index.html` no seu navegador web.
+1. Abra o arquivo `index.html` no seu navegador web [Clique Aqui](https://italomartinsg.github.io/forca-js/).
 2. O jogo começará quando escolher um nivel de dificuldade.
 3. A palavra a ser adivinhada será exibida com underscores representando as letras desconhecidas.
 4. Clique nas letras para tentar adivinhar a palavra.
