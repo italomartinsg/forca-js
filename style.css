@@ -1,0 +1,192 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(182, 182, 182);
+}
+
+.container-inicial {
+  margin: 0 auto;
+  width: 500px;
+  height: 230px;
+  border: 2px solid black;
+  text-align: center;
+  background: rgb(216, 214, 214);
+}
+.titulo-inicial {
+  font-size: 2rem;
+}
+label {
+  font-size: 1.3rem;
+}
+
+.input-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 40px;
+}
+.container-secundario {
+  display: none;
+}
+.container-forca {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  min-width: 580px;
+  max-width: 800px;
+  margin: auto;
+
+  border: 2px solid black;
+  border-radius: 4px;
+  background: white;
+}
+
+.estrutura-forca {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.estrutura-forca-cima {
+  background: black;
+  width: 180px;
+  height: 5px;
+  position: absolute;
+}
+
+.estrutura-forca-ligacao {
+  width: 70px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 17px;
+  left: 0px;
+  transform: rotate(150deg);
+}
+.estrutura-forca-lateral {
+  background: black;
+  width: 5px;
+  height: 200px;
+  margin-left: 10px;
+}
+.estrutura-forca-baixo {
+  background: black;
+  width: 30px;
+  height: 5px;
+}
+.corda-forca {
+  width: 5px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+.boneco-forca {
+  position: absolute;
+  top: 39px;
+  left: 129px;
+}
+
+.cabeca-boneco {
+  width: 40px;
+  height: 40px;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.corpo-boneco {
+  width: 5px;
+  height: 70px;
+  background: black;
+  position: absolute;
+  top: 45px;
+  left: 21px;
+}
+
+.braco-esquerdo-boneco,
+.braco-direito-boneco,
+.perna-esquerda-boneco,
+.perna-direita-boneco {
+  width: 5px;
+  height: 40px;
+  background: black;
+  position: absolute;
+}
+
+.braco-esquerdo-boneco {
+  transform: rotate(40deg);
+  left: 8px;
+}
+.braco-direito-boneco {
+  transform: rotate(140deg);
+  left: 34px;
+}
+
+.perna-esquerda-boneco {
+  transform: rotate(40deg);
+  top: 108px;
+  left: 8px;
+  background: black;
+}
+
+.perna-direita-boneco {
+  transform: rotate(140deg);
+  top: 108px;
+  left: 34px;
+  background: black;
+}
+
+.palavra-forca {
+  align-self: end;
+  text-align: center;
+  font-size: 3rem;
+}
+.letraPalavra {
+  margin: 2px;
+  margin-bottom: -30px;
+  /* border-bottom: 2px solid black; */
+  position: relative;
+}
+
+.dados-forca {
+  grid-column: 1/-1;
+  padding: 10px;
+}
+
+.ativo {
+  display: block;
+}
+
+.removida {
+  display: none;
+}
+.vitoria {
+  color: green;
+  font-size: 2rem;
+}
+
+.derrota {
+  color: red;
+  font-size: 2rem;
+}
+
+.keyboard-forca {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+.btn {
+  padding: 5px 20px;
+}
+.reiniciar {
+  text-align: center;
+  grid-column: 2;
+}
+
+@media (max-width: 720px) {
+  .keyboard-forca {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1/ -1;
+  }
+}
