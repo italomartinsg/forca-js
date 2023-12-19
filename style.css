@@ -190,3 +190,70 @@ label {
     grid-column: 1/ -1;
   }
 }
+@media (max-width: 500px) {
+  .container-inicial {
+    width: 300px;
+    height: 250px;
+  }
+
+  .obs {
+    font-size: 0.87rem;
+  }
+
+  .input-dificuldade {
+    font-size: 0.9rem;
+  }
+  .input-button {
+    margin: 0 auto;
+  }
+  .container-forca {
+    gap: 3px;
+    min-width: 230px;
+    margin: auto;
+
+    margin: auto;
+  }
+  .estrutura-forca {
+    width: 30px;
+  }
+
+  .estrutura-forca-cima {
+    width: 90px;
+  }
+  .estrutura-forca-ligacao {
+    width: 70px;
+  }
+  .estrutura-forca-lateral {
+    height: 160px;
+  }
+
+  .corda-forca {
+    height: 20px;
+    left: 70px;
+  }
+  .boneco-forca {
+    top: 16px;
+    left: 50px;
+  }
+  .palavra-forca {
+    font-size: 2rem;
+  }
+  .derrota {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .keyboard-forca {
+    width: 300px;
+  }
+
+  .reiniciar {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    min-width: 380px;
+  }
+}
