@@ -241,6 +241,15 @@ function iniciar(dificuldade) {
           mensagemDerrota.classList.add("derrota");
           mensagemDerrota.textContent = "VOCE PERDEU!";
           palavraTela.appendChild(mensagemDerrota);
+          const letrasOcultas = document.querySelectorAll("span");
+          for (let i = 0; i < palavraForca.length; i++) {
+            // console.log(letrasOcultas[i]);
+            const indexLetra = letrasOcultas[i].getAttribute("indexletra");
+            if (indexLetra == [i]) {
+              console.log(indexLetra, i);
+              letrasOcultas[i].textContent = palavraForca[i];
+            }
+          }
           break;
       }
     } else {
@@ -269,7 +278,15 @@ function iniciar(dificuldade) {
           mensagemDerrota.classList.add("derrota");
           mensagemDerrota.textContent = "VOCE PERDEU!";
           palavraTela.appendChild(mensagemDerrota);
-
+          const letrasOcultas = document.querySelectorAll("span");
+          for (let i = 0; i < palavraForca.length; i++) {
+            // console.log(letrasOcultas[i]);
+            const indexLetra = letrasOcultas[i].getAttribute("indexletra");
+            if (indexLetra == [i]) {
+              console.log(indexLetra, i);
+              letrasOcultas[i].textContent = palavraForca[i];
+            }
+          }
           break;
       }
     }

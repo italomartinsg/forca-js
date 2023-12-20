@@ -156,9 +156,6 @@ label {
   display: block;
 }
 
-.removida {
-  display: none;
-}
 .vitoria {
   color: green;
   font-size: 2rem;
@@ -183,7 +180,9 @@ label {
   text-align: center;
   grid-column: 2;
 }
-
+.removida {
+  display: none;
+}
 @media (max-width: 720px) {
   .keyboard-forca {
     grid-template-columns: repeat(5, 1fr);
